@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>How Open Ports Get Exploited – ZIYAN</title>
+<style>
+body {
+  background:#020617;
+  color:#e5e7eb;
+  font-family: monospace;
+  max-width:900px;
+  margin:auto;
+  padding:40px;
+}
+
+h1, h2 {
+  color:#22c55e;
+}
+
+a {
+  color:#38bdf8;
+  text-decoration:none;
+}
+
+.card {
+  background:#020617;
+  border:1px solid #020617;
+  padding:30px;
+  border-radius:12px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>How Open Ports Get Exploited</h1>
+<p><strong>Project:</strong> Sentinel Port Scanner<br>
+<strong>Author:</strong> ZIYAN</p>
+
+<div class="card">
+
+<h2>What is an open port?</h2>
+<p>
+Every device connected to a network exposes ports that allow services to run.
+Port 22 is usually SSH, 80 is web servers, 3306 is databases, and so on.
+When a port is open, it means a service is listening and waiting for connections.
+</p>
+
+<h2>How attackers find open ports</h2>
+<p>
+Attackers never guess. They use automated tools like Nmap and Masscan to scan
+thousands of ports on a target. If a port replies, it means a service exists.
+This step is called reconnaissance.
+</p>
+
+<h2>What happens after a port is discovered</h2>
+<p>
+Once an attacker knows which ports are open, they start attacking the service behind it.
+For example, SSH ports are brute-forced, web servers are exploited, and database ports
+are targeted for data theft.
+</p>
+
+<h2>How Sentinel Port Scanner works</h2>
+<p>
+My Port Scanner performs the same discovery process, but for defense. It sends TCP
+probes to common ports and logs which services are exposed. This allows a defender
+to see their attack surface before attackers do.
+</p>
+
+<h2>Security impact</h2>
+<p>
+Most real-world breaches begin with an open, forgotten port. By identifying and
+closing unnecessary ports, organizations reduce their risk dramatically.
+</p>
+
+<p>
+<a href="https://github.com/Ziyan909/Port-Scanner" target="_blank">
+View Port Scanner on GitHub →
+</a>
+</p>
+
+</div>
+
+</body>
+</html>
